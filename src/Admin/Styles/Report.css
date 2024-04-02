@@ -1,0 +1,488 @@
+.body-no-scroll{
+    overflow: hidden;
+}
+
+.report-page-container.dark, .report-label.dark, .report-input.dark, .report-header.dark,
+.report-reset-btn.dark, .report-detail-btn-table.dark, .report-previous-page-btn.dark,
+.report-page-num-header.dark, .report-next-page-btn.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.report-reset-btn.dark:active, .report-detail-btn-table.dark:active, .report-previous-page-btn.dark:active,
+.report-next-page-btn.dark:active{
+    background-color: #1b1b1b;
+}
+
+.loading-container-report{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.loading-container-report.stop{
+    display: none;
+}
+
+.no-report{
+    display: flex;
+    justify-content: center;
+}
+
+.no-report.no{
+    display: none;
+}
+
+.report-page{
+    display: flex;
+    margin-left: auto;
+    width: 87%;
+    /* margin-top: 5rem;  */
+    transition: width 0.3s ease-in-out;
+}
+
+.report-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem auto;
+    border: none;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.report-page-.contract{
+    width: 87%;
+    transition: width 0.3s ease-in-out;
+}
+
+.report-hl-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.report-hl{
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.report-label-input-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.report-label-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.report-label{
+    font-weight: 500;
+}
+
+.report-input{
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: padding width 0.3s ease-in-out;
+}
+
+.report-calendar-icon{
+    position: absolute;
+    top: 53%;
+    right: 5%;
+    font-size: large;
+}
+
+.report-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.report-header > h5{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+}
+
+.report-header-btn-container{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.report-reset-btn, .report-generate-btn{
+    border-radius: 4px;
+    width: 8rem;
+    padding: 0.3rem;
+}
+
+.report-generate-btn{
+    background-color: #1366D9;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.report-reset-btn{
+    background-color: transparent;
+    color: #5D6679;
+    border: 1px solid #D0D5DD;
+    margin-right: 2rem;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.report-generate-btn:hover, .report-reset-btn:hover{
+    transform: scale(1.05);
+}
+
+.report-generate-btn:active{
+    transform: scale(0.95);
+    background-color: #005cdd;
+}
+
+.report-reset-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.report-table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; 
+}
+
+.report-table-header{
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #D0D3D9;
+    text-align: center;
+}
+
+.report-table-data{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #D0D3D9;
+}
+
+.report-table-row-data:last-child td{
+    border: none;
+}
+
+.report-pagenation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.report-pagenation > h6{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #48505E;
+}
+
+.report-previous-page-btn, .report-next-page-btn{
+    background-color: transparent;
+    color: #5D6679;
+    border-radius: 4px;
+    border: 1px solid #D0D5DD;
+    padding: 0.3rem 1rem;
+    width: 7rem;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.report-previous-page-btn:hover, .report-next-page-btn:hover{
+    transform: scale(1.05);
+    
+}
+
+.report-previous-page-btn:active, .report-next-page-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.report-detail-btn-table{
+    background-color: transparent;
+    border: 1px solid #D0D3D9;
+    color: #48505E;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.report-detail-btn-table:hover{
+    transform: scale(1.05);
+}
+
+.report-detail-btn-table:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.table-item{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+ 
+.custom-calendar {
+    /* width: 240px; */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.custom-calendar .react-datepicker__header {
+    background-color: #edf1fd; /* Adjust the header background color as needed */
+    border-bottom: none;
+}
+  
+.custom-calendar .react-datepicker__current-month {
+    color: #000; /* Adjust the current month text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day-name{
+    color: #000;
+}
+
+.custom-calendar .react-datepicker__day {
+    color: #000; /* Adjust the day name and day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--selected {
+    background-color: #1366D9; /* Adjust the selected day background color as needed */
+    color: #fff; /* Adjust the selected day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--keyboard-selected {
+    background-color: #1366D9; /* Adjust the keyboard selected day background color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--disabled {
+    color: #ccc; /* Adjust the disabled day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--outside-month {
+    color: #999; /* Adjust the outside month day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day:hover {
+    background-color: #e0e0e0; /* Adjust the day hover background color as needed */
+}
+
+@media screen and (max-width: 1240px){
+
+    .report-page.contract{
+        width: 80%;
+    }
+
+    .report-previous-page-btn, .report-next-page-btn{
+        font-size: 0.9rem;
+        width: 6rem;
+    }
+
+    .report-header > h5{
+        width: 60%;
+        font-size: 1.15rem;
+    }
+
+    .report-reset-btn, .report-generate-btn{
+        width: 7.5rem;
+        font-size: 0.95rem;
+        padding: 0.25rem;
+    }
+
+    .report-input{
+        padding: 0.25rem 1rem;  
+    }
+}
+
+@media screen and (max-width: 991px){
+
+    .report-page-container{
+        width: 95%;
+    }
+
+    .report-previous-page-btn, .report-next-page-btn{
+        font-size: 0.85rem;
+    }
+
+    .report-table-data{
+        /* text-align: left; */
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .report-table-header{
+        /* text-align: left; */
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .report-table-header-erasable, .report-table-data-erasable{
+        display: none;
+    }
+
+    .report-header{
+        flex-direction: column;
+    }
+
+    .report-header > h5{
+        justify-content: center;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .report-header-btn-container{
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .report-reset-btn, .report-generate-btn{
+        width: 8rem;
+        font-size: 0.9rem;
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 875px){
+
+    .report-page.contract{
+        width: 100%;
+    }
+
+    .report-page{
+        width: 100%;
+    }
+
+    .report-previous-page-btn, .report-next-page-btn{
+        font-size: 0.75rem;
+        padding: 0.3rem;
+        width: 5rem;
+    }
+
+    .report-page-num-header{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .report-page-container{
+       padding: 0.4rem;
+       padding-bottom: 3rem;
+    }
+
+    .report-name-btn-container{
+        padding: 0.6rem;
+    }
+
+    .report-input{
+        padding: 0.25rem 0.8rem;  
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .report-page-container{
+        width: 100%;
+    }
+
+    .report-label-input-container{
+        flex-direction: column;
+    }
+
+    .report-label-input{
+        
+    }
+    
+    .report-input{
+        display: flex;
+        padding: 0.25rem 2vw;  
+        width: 60vw;
+    }
+
+    .report-label{
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .report-calendar-icon{
+        position: absolute;
+        top: 55%;
+        right: 5%;
+        font-size: large;
+    }
+
+    .report-final-date-input{
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .report-header > h5{
+        font-size: 1rem;
+    }
+
+    .report-input{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    .report-page-container{
+        padding: 0.2rem;
+    }
+
+    .report-header > h5{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .report-name-btn-container{
+        padding: 0.5rem;
+    }
+
+    .report-reset-btn, .report-generate-btn{
+        width: 6.5rem;
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+
+    .report-table-header{
+        font-size: 0.8rem;
+    }
+
+    .report-table-data{
+        font-size: 0.75rem;
+    }
+
+    .report-previous-page-btn, .report-next-page-btn{
+        font-size: 0.6rem;
+        width: 5rem;
+        padding: 0.1rem;
+    }
+
+    .report-page-num-header{
+        font-size: 0.7rem;
+    }
+}

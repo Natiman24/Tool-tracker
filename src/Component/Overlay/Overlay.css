@@ -1,0 +1,60 @@
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    z-index: 3;
+  }
+  
+.overlay-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 400px; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* max-height: 800px; */
+    overflow: auto;   
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.overlay-content.dark{
+  background-color: #222222;
+  color: white;
+}
+
+.overlay-content.load {
+  display: none;
+}
+
+.loading-container-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    z-index: 4;
+}
+
+.loading-container-overlay.stop{
+    display: none;
+}
+
+@media screen and (max-width: 350px){
+  .overlay-content{
+    min-width: 300px
+  }
+}

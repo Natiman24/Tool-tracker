@@ -1,0 +1,290 @@
+.body-no-scroll {
+    overflow: hidden;
+}
+
+.filter-page-active.dark, .filter-page.dark, .filter-input.dark, .filter-label.dark, .cancel-filter-btn.dark,
+.filter-dropdown-content.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.cancel-filter-btn.dark:active{
+    background-color: #1b1b1b;
+}
+
+.cancel-filter-btn.dark{
+    border: 1px solid #fff;
+}
+
+.filter-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    top: 0;
+    right: -100%;
+    width: 20%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    z-index: 1000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background-color: white;
+    padding: 1rem;
+    position: fixed;
+    overflow-y: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+.filter-page-active{
+    right: 0%;
+    z-index: 9999;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background-color: white;
+    transition: right 0.5s ease-in-out;
+}
+
+
+.filter-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.xmark-filter{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.filter-hl{
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.filter-label-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.filter-label-input .shown{
+    margin-bottom: 0;
+}
+
+.filter-label{
+    font-weight: 500;
+}
+
+.filter-input{
+    width: 100%;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.filter-dropdown-input{
+    padding-right: 3rem;
+}
+
+.filter-calendar-icon{
+    position: absolute;
+    top: 53%;
+    right: 5%;
+    font-size: large;
+}
+
+.filter-dropdown{
+    cursor: pointer;
+}
+
+.xmark-filter-dropdown{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.xmark-filter-dropdown.show, .xmark-filter-date.show{
+    display: block;
+}
+
+.xmark-filter-date{
+    position: absolute;
+    top: 56%;
+    right: 14%;
+    font-size: medium;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.dropdown-arrow{
+    position: absolute;
+    top: 23%;
+    right: 5%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 5%;
+}
+
+.dropdown-arrow.expand{
+    transform: rotate(180deg);
+}
+
+.filter-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 8%; */
+}
+
+.filter-filter-btn{
+    color: white;
+    background-color: #1570EF;
+    border: none;
+    width: 90%;
+    /* padding: 0.2rem 0; */
+    height: 45%;
+    transition: all 0.3s ease-in-out;
+}
+
+.cancel-filter-btn{
+    height: 45%;
+    width: 90%;
+    padding-bottom: 0.1rem;
+    color: #808080;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #000;
+}
+
+.filter-filter-btn:hover{
+    transform: scale(1.02);
+}
+
+.cancel-filter-btn:hover{
+    transform: scale(1.02);
+}
+
+.filter-filter-btn:active{
+    transform: scale(0.97);
+    background-color: #005cdd;
+}
+
+.cancel-filter-btn:active{
+    transform: scale(0.97);
+    background-color: #f5f5f5;
+}
+
+.filter-input-dropdown-container{
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.filter-dropdown-content{
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    max-height: 10rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.filter-dropdown-content.show{
+    display: block;
+}
+
+.filter-dropdown-content div{
+    display: flex;
+    align-items: center;
+    padding: 3% 5%;
+}
+
+.dropdown-content input[type="checkbox"] {
+    margin-right: 3%; /* Adjust the margin as needed */
+}
+
+.filter-checkbox{
+    cursor: pointer;
+    width: 10%;
+}
+
+.checkbox-label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-calendar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.custom-calendar .react-datepicker__header {
+    background-color: #edf1fd; /* Adjust the header background color as needed */
+    border-bottom: none;
+}
+  
+.custom-calendar .react-datepicker__current-month {
+    color: #000; /* Adjust the current month text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day-name{
+    color: #000;
+}
+
+.custom-calendar .react-datepicker__day {
+    color: #000; /* Adjust the day name and day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--selected {
+    background-color: #1366D9; /* Adjust the selected day background color as needed */
+    color: #fff; /* Adjust the selected day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--keyboard-selected {
+    background-color: #1366D9; /* Adjust the keyboard selected day background color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--disabled {
+    color: #ccc; /* Adjust the disabled day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day--outside-month {
+    color: #999; /* Adjust the outside month day text color as needed */
+}
+  
+.custom-calendar .react-datepicker__day:hover {
+    background-color: #e0e0e0; /* Adjust the day hover background color as needed */
+}
+
+
+@media screen and (max-width: 1440px){
+    .filter-page{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .filter-page{
+        width: 100%;
+    }
+}
+
+

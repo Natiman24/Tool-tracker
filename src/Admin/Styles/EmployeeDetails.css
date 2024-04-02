@@ -1,0 +1,522 @@
+.body-no-scroll{
+    overflow: hidden;
+}
+
+.employee-details-container.dark, .employee-details-edit-btn.dark, .employee-details-delete-btn.dark,
+.employee-details-parameter-value.dark, .edit-employee-discard-btn.dark, .edit-employee-input.dark, 
+.edit-employee-label.dark, .delete-employee-header.dark, .delete-employee-text.dark, .delete-employee-cancel-btn.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.employee-details-edit-btn.dark span{
+    color: white;
+}
+
+.employee-details-parameter.dark{
+    color: #d1d1d1;
+}
+
+.employee-details-edit-btn.dark:active, .employee-details-delete-btn.dark:active, .edit-employee-discard-btn.dark:active, 
+.delete-employee-cancel-btn.dark:active{
+    background-color: #1b1b1b;
+}
+
+.employee-phone-error{
+    font-size: 0.95rem;
+}
+
+.loading-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.loading-container.stop, .loading-container-update.stop{
+    display: none;
+}
+
+.employee-details-page{
+    display: flex;
+    margin-left: auto;
+    width: 87%;
+    /* margin-top: 5rem;  */
+    transition: width 0.3s ease-in-out;
+}
+
+.employee-details-page.contract{
+    width: 87%;
+}
+
+.employee-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem auto;
+    border: none;
+    padding: 1rem;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.employee-details-name-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-details-header{
+    display: flex;
+    margin-top: auto;
+}
+
+.employee-details-btn-container{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.employee-details-edit-btn, .employee-details-delete-btn{
+    background-color: transparent;
+    color: #5D6679;
+    border: 1px solid #B9BDC7;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.employee-details-edit-btn:hover, .employee-details-delete-btn:hover{
+    transform: scale(1.05);
+}
+
+.employee-details-edit-btn:active, .employee-details-delete-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.employee-details-edit-btn{
+    margin-right: 2rem;
+}
+
+.fa-pencil{
+    color: #5D6679;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.employee-details-hl-container{
+    display: flex;
+    justify-content: center;
+}
+
+.employee-details-hl{
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.employee-details-info-container{
+    padding: 2rem 1rem; 
+}
+
+.employee-details-info-container > h6{
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.employee-details-info{
+    padding: 0 1rem;
+    transition: padding 0.3s ease-in-out;
+}
+
+.employee-details-table{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 2rem;
+    width: 60%;
+    transition: width 0.3s ease-in-out;
+    table-layout: fixed;
+    max-width: 100%;
+}
+
+.employee-details-table tr{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.employee-details-table td, .employee-details-table th{
+    width: 50%;
+    transition: width 0.3s ease-in-out;
+}
+
+.employee-details-parameter{
+    font-weight: 500;
+    color: #5D6679;
+}
+
+.employee-details-parameter-value{
+    color: #000;
+    font-weight: 500;
+}
+
+
+.edit-employee-form-container{
+    padding: 3%;
+}
+
+.edit-employee-label-input{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+    position: relative;
+}
+
+.edit-phone-label-input{
+    margin-bottom: 0.5rem;
+}
+
+.edit-employee-label{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #48505E;
+}
+
+.edit-employee-input{
+    width: 60%;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+/* .edit-employee-input-phone-num{
+    padding-left: 3rem;
+} */
+
+.employee-details-country-code{
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+
+.edit-employee-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-top: 20%;
+}
+
+.edit-employee-discard-btn, .edit-employee-update-btn{
+    border-radius: 5px ;
+    padding: 3% 8%;
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.edit-employee-discard-btn{
+    background-color: transparent;
+    border: 1px solid #F0F1F3;
+    color: #858D9D;
+}
+
+.edit-employee-update-btn{
+    background-color: #1366D9;
+    color: white;
+    border: none;
+}
+
+.edit-employee-discard-btn:hover{
+    transform: scale(1.05);
+}
+
+.edit-employee-update-btn:hover{
+    transform: scale(1.05);
+}
+
+.edit-employee-discard-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.edit-employee-update-btn:active{
+    transform: scale(0.95);
+    background-color: #005cdd;
+}
+
+.delete-employee-header{
+    text-align: center;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.delete-employee-text{
+    color: #383E49;
+    text-align: center;
+    margin-top: 10%;
+    font-size: large;
+}
+
+.delete-employee-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.delete-employee-cancel-btn, .delete-employee-ok-btn{
+    border-radius: 5px ;
+    padding: 2% 5%;
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.delete-employee-cancel-btn{
+    background-color: transparent;
+    border: 1px solid #F0F1F3;
+    color: #858D9D;
+}
+
+.delete-employee-ok-btn{
+    background-color: #1366D9;
+    color: white;
+    border: none;
+}
+
+.delete-employee-cancel-btn:hover{
+    transform: scale(1.05);
+}
+
+.delete-employee-ok-btn:hover{
+    transform: scale(1.05);
+}
+
+.delete-employee-cancel-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.delete-employee-ok-btn:active{
+    transform: scale(0.95);
+    background-color: #005cdd;
+}
+
+.employee-details-header{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 3.6em; /* Adjust this height based on your font size and line height */
+    max-width: 75%;
+  }
+
+@media screen and (max-width: 1240px){
+    .employee-details-page.contract{
+        width: 80%;
+    }
+
+    .edit-employee-discard-btn, .edit-employee-update-btn{
+        border-radius: 5px ;
+        padding: 0.3rem 0.1rem;
+        width: 40%;
+        font-size: 0.9rem;
+
+    }
+
+    .edit-employee-btn-container{
+        width: 70%;
+    }
+
+    .employee-details-edit-btn, .employee-details-delete-btn{
+        font-size: 0.9rem;
+    }
+
+    .fa-pencil{
+        font-size: 0.8rem;
+    }
+
+    /* .employee-details-specifics-table{
+        width: 70%;   
+    }
+
+    .employee-details-specifics-table th{
+        width: 90%;
+    } */
+}   
+
+@media screen and (max-width: 991px){
+
+    .employee-details-container{
+        width: 95%;
+    }
+
+    .employee-details-edit-btn, .employee-details-delete-btn{
+        font-size: 0.8rem;
+    }
+
+    .fa-pencil{
+        font-size: 0.7rem;
+    }
+
+    .overlay-content > h5{
+        font-size: 1.2rem;
+    }
+
+    .edit-employee-label{
+        font-size: 1rem;
+    }
+
+    .edit-employee-input{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .employee-details-info-container{
+        padding: 2rem 0.5rem; 
+    }
+
+    .employee-details-country-code{
+        font-size: 0.9rem;
+    }
+
+    /* .edit-employee-input-phone-num{
+        padding-left: 2.5rem;
+    } */
+
+    .employee-details-table{
+        width: 80%;
+    }
+
+    .employee-details-header{
+        max-width: 70%;
+    }
+
+    /* .employee-details-table, .employee-details-parameter, .employee-details-parameter-value{
+       width: 90%;
+       border: 1px solid #000;
+    } */
+
+
+
+    
+}
+
+@media screen and (max-width: 875px){
+    .employee-details-page.contract{
+        width: 100%;
+    }
+
+    .employee-details-page{
+        width: 100%;
+    }
+
+    .edit-employee-btn-container{
+        width: 60%;
+    }
+
+    .delete-employee-header{
+        font-size: 1.5rem
+    }
+
+    .delete-employee-text{
+        font-size: 1rem;
+    }
+
+    .delete-employee-cancel-btn, .delete-employee-ok-btn{
+        font-size: 0.9rem;
+    }
+
+    .employee-details-header{
+        max-width: 65%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .employee-details-container{
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .employee-details-name-btn-container{
+        padding: 0.6rem;
+    }
+
+    .employee-details-edit-btn, .employee-details-delete-btn{
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .employee-details-table{
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .employee-details-header{
+        max-width: 60%;
+    }
+
+    .employee-details-table td{
+        width: 60%;
+        
+    }
+
+    .employee-details-table th{
+        width: 40%;  
+    }
+}
+
+@media screen and (max-width: 500px){
+    .employee-details-header{
+        max-width: 50%;
+        -webkit-line-clamp: 3;
+        max-height: 5rem;
+    }
+
+    .employee-details-header > h5{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .employee-details-header{
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .employee-details-name-btn-container{
+        padding: 0.5rem;
+    }
+
+    .overlay-content > h5{
+        font-size: 1.2rem;
+    }
+
+    .edit-employee-label{
+        font-size: 1rem;
+    }
+
+    .employee-details-country-code{
+        font-size: 0.8rem;
+    }
+
+    .edit-employee-input{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* .edit-employee-input-phone-num{
+        padding-left: 2.2rem;
+    } */
+
+    .employee-details-table{
+        margin: 0;
+    }
+}

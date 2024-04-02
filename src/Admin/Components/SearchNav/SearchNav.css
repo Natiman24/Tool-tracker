@@ -1,0 +1,192 @@
+.body-no-scroll{
+    overflow: hidden;
+}
+
+.search-nav.dark, .search-bar-notification-container.dark, .search-bar.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.notification-bell.dark svg path{
+    stroke: white;
+    fill: white;
+}
+
+.search-nav{
+    /* padding: 0; */
+    position: sticky; /**/
+    top: 0; /**/
+    left: 13%; /**/
+    display: flex;
+    margin-left: auto;
+    width: 87%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.search-bar-notification-container{
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+
+
+.search-nav.contract{
+    width: 87%;
+}
+
+.search-nav-hamburger-icon{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.search-bar-container{
+    position: relative;
+    width: 70%;
+}
+
+.search-bar{
+    border: 1.5px solid #D0D5DD;
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+    width: 100%;
+}
+
+.fa-search{
+    cursor: pointer;
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    font-size: larger;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.fa-search:hover{
+    
+    transform: scale(1.05);
+}
+
+.fa-search:active{
+    /* color: #000; */
+    transform: scale(0.95);
+}
+
+.xmark-search{
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    font-size: large;
+    transition: transform 0.3s ease-in-out;
+}
+
+.xmark-search:hover{
+    transform: scale(1.05);
+}
+
+.notification-bell{
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+    margin-top: 0.1rem;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.notification-bell:hover{
+    transform: scale(1.1);
+}
+
+.notification-bell:active{
+    transform: scale(0.95);
+}
+
+/* .fa-bell:active{
+    color: #000;
+} */
+
+/* .blur{
+    backdrop-filter: blur(8px); 
+    background-color: rgba(0, 0, 0, 0.3); 
+} */
+
+/* @media screen and (max-width:) */
+
+@media screen and (max-width: 1240px){
+    .search-nav.contract{
+        width: 80%;
+        left: 20%;
+    }
+    .search-bar-notification-container{
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 875px){
+    .search-nav{
+        width: 100%;
+        left: 0; 
+    }
+
+    .search-nav.contract{
+        width: 100%;
+        left: 0;
+    }
+
+    .search-bar-notification-container{
+        padding: 0.8rem 1rem;
+    }
+
+    .search-bar{
+        border: 1.5px solid #D0D5DD;
+        border-radius: 34px;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .fa-search{
+        left: 3%;
+        top: 30%;
+        font-size: large;
+
+    }
+
+    .xmark-search{
+        top: 32%;
+        right: 5%
+    }
+
+    .search-nav-hamburger-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .notification-bell svg{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px){
+    .fa-search{
+        left: 5%;
+    }
+    .xmark-search{
+        right: 7%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .search-bar{
+        padding: 0.5rem 2rem;
+    }
+}

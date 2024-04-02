@@ -1,0 +1,562 @@
+.body-no-scroll{
+    overflow: hidden;
+}
+
+.notification-page-container.dark, .notification-page-all-btn.dark, .notification-page-order-btn.dark, .notification-page-password-btn.dark, .notification-page-archived-btn.dark, 
+.notification-card.dark, .notification-detail-parameter.dark, .notification-detail-parameter-value.dark,
+.notification-detail-overlay-header.dark, .notification-detail-overlay-text.dark, .notification-detail-overlay-cancel-btn.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.notification-page-all-btn.dark.active, .notification-page-order-btn.dark.active, .notification-page-password-btn.dark.active, .notification-page-archived-btn.dark.active{
+    color: #09bef0;
+    border: none;
+    border-bottom: 2px solid #09bef0;
+}
+
+.notification-archive-icon.dark.active svg path{
+    color: #09bef0;
+    stroke: #09bef0;
+}
+
+.notification-card.dark{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1) ;
+}
+
+.notification-detail-overlay-cancel-btn.dark:active{
+    background-color: #1b1b1b;
+}
+
+.notification-detail-parameter-value.date.dark{
+    color: #dbdbdb;
+}
+
+.notification-archive-icon.dark svg path{
+    stroke: white;
+}
+
+/* .notification-page-next-page-btn.dark:active, .notification-page-previous-page-btn.dark:active,
+.details-notification-page-btn-table.dark:active{
+    background-color: #1b1b1b;
+} */
+
+.notification-not-found{
+    display: flex;
+    margin: 0 auto 2rem auto;
+    justify-content: center;
+}
+
+.loading-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.loading-container.stop, .loading-container-update.stop{
+    display: none;
+}
+
+.notification-page{
+    display: flex;
+    margin-left: auto;
+    width: 87%;
+    /* margin-top: 5rem;  */
+    transition: width 0.3s ease-in-out;
+}
+
+.notification-page.contract{
+    width: 87%;
+}
+
+.notification-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem auto;
+    border: none;
+    padding: 1rem;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.notification-page-name-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-page-header{
+    display: flex;
+    margin-top: auto;
+    /* margin-top: auto; */
+}
+
+
+.notification-page-result-btn-container{
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+    margin-right: 12rem;
+}
+
+.notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn, .notification-page-archived-btn{
+    border: none;
+    background-color: transparent;
+    color: #48505E;
+    font-weight: 500;
+    user-select: none;
+}
+
+.notification-page-all-btn.active, .notification-page-order-btn.active, .notification-page-password-btn.active, .notification-page-archived-btn.active{
+    color: #1570EF;
+    padding-bottom: 0.8rem;
+    border: none;
+    border-bottom: 2px solid #1570EF;
+}
+
+.notification-archive-icon.active svg path{
+    stroke: #1570EF;
+}
+
+.notification-page-hl{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 2px solid #dbdbdb; /* Adjust line style */
+}
+
+.notification-page-component-container > h6{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.notification-card{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.notification-card:hover{
+    transform: scale(1.01);
+}
+
+
+.notification-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 80%;
+    transition: width 0.3s ease-in-out;
+}
+
+.notification-card-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.notification-card-item-container.first{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.notification-card-item-container.second{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+.notification-card-item{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.notification-detail-table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    transition: width 0.3s ease-in-out;
+    table-layout: fixed;
+    max-width: 100%;
+}
+
+.notification-detail-table.second{
+    display: none;
+}
+
+.notification-detail-table tr{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.notification-detail-table tr:last-child{
+    margin-bottom: 1rem;
+}
+
+/* .notification-detail-table td, .notification-detail-table th{
+    width: 50%; 
+} */
+
+.notification-detail-table td{
+    width: 40%;
+    transition: width 0.3s ease-in-out;
+}
+.notification-detail-table th{
+    width: 60%;
+    transition: width 0.3s ease-in-out;
+}
+
+.notification-detail-table td{
+    text-align: end;
+}
+
+.notification-detail-parameter{
+    font-weight: 500;
+}
+
+.notification-detail-parameter-value{
+    font-weight: 500;
+}
+
+.notification-detail-parameter-value.date{
+    color: #5D6679;
+}
+
+.notification-detail-parameter-value-row, .notification-card-archive-btn-erasable-active{
+    display: none
+}
+
+.notification-card-archive-btn{
+    border: none;
+    background-color: #1366D9;
+    color: white;
+    border-radius: 4px;
+    width: 5rem;
+    padding: 0.3rem 0;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.notification-card-archive-btn:hover{
+    transform: scale(1.05);
+}
+
+.notification-card-archive-btn:active{
+    transform: scale(0.95);
+    background-color: #005cdd;
+}
+
+.notification-detail-overlay-header{
+    text-align: center;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.notification-detail-overlay-text{
+    color: #383E49;
+    text-align: center;
+    margin-top: 10%;
+    font-size: large;
+}
+
+.notification-detail-overlay-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.notification-detail-overlay-cancel-btn, .notification-detail-overlay-ok-btn{
+    border-radius: 5px ;
+    padding: 2% 5%;
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-detail-overlay-cancel-btn{
+    background-color: transparent;
+    border: 1px solid #F0F1F3;
+    color: #858D9D;
+}
+
+.notification-detail-overlay-ok-btn{
+    background-color: #1366D9;
+    color: white;
+    border: none;
+}
+
+.notification-detail-overlay-cancel-btn:hover{
+    transform: scale(1.05);
+}
+
+.notification-detail-overlay-ok-btn:hover{
+    transform: scale(1.05);
+}
+
+.notification-detail-overlay-cancel-btn:active{
+    transform: scale(0.95);
+    background-color: #f5f5f5;
+}
+
+.notification-detail-overlay-ok-btn:active{
+    transform: scale(0.95);
+    background-color: #005cdd;
+}
+
+.notification-type-icon{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.notification-archive-icon{
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.notification-archive-icon:active{
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 1240px){
+    .notification-page.contract{
+        width: 80%;
+    }
+
+    .notification-detail-table{
+        width: 95%; 
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+
+    .notification-page-container{
+        width: 95%;
+    }
+
+    .notification-card-container{
+        width: 90%;
+    }
+
+    .notification-type-icon{
+        font-size: 1.4rem;
+    }
+
+    .notification-archive-icon{
+        font-size: 1.5rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 875px){
+
+    .notification-page.contract{
+        width: 100%;
+    }
+
+    .notification-page{
+        width: 100%;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 8rem;
+    }
+
+    .notification-card-container{
+        width: 95%;
+    }
+
+    .notification-detail-overlay-header{
+        font-size: 1.5rem
+    }
+
+    .notification-detail-overlay-text{
+        font-size: 1rem;
+    }
+
+    .notification-detail-overlay-cancel-btn, .notification-detail-overlay-ok-btn{
+        font-size: 0.9rem;
+    }
+
+    .notification-card-archive-btn{
+        width: 4.5rem;
+        padding: 0.25rem 0;
+        font-size: 0.95rem;
+    }
+
+    .notification-detail-parameter-value.date{
+        font-size: 0.95rem;
+    }
+
+    .notification-archive-icon svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
+@media screen and (max-width: 600px){
+
+    .notification-page-container{
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .notification-page-name-btn-container{
+        padding: 0.6rem;
+    }
+
+    .notification-page-component-container > h6{
+        padding: 1rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 6rem;
+    }
+
+    .notification-detail-table.first{
+        display: none;
+    }
+
+    .notification-detail-table.second{
+        display: table;
+    }
+
+    .notification-card-container{
+        width: 100%;
+    }
+
+    .notification-detail-table{
+        width: 100%; 
+    }
+
+    .notification-card-archive-btn{
+        padding: 0.25rem 0;
+        font-size: 0.9rem;
+    }
+
+    .notification-card{
+        padding: 1rem 1rem 0.4rem 1rem;
+    }
+
+    .notification-detail-parameter.second, .notification-detail-parameter-value.second{
+        width: 100%;
+    }
+
+    .notification-detail-parameter-row.second{
+        margin-bottom: 0.5rem;
+    }
+
+    .notification-detail-table tr{
+        margin-bottom: 1rem;
+    }
+
+    .notification-type-icon{
+        font-size: 1.3rem;
+    }
+
+}
+@media screen and (max-width: 500px){
+    /* .notification-page-header{
+        max-width: 50%;
+        -webkit-line-clamp: 3;
+        max-height: 5rem;
+    } */
+
+    .notification-page-header > h5{
+        font-size: 1.1rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 4rem;
+    }
+
+    .notification-card-container{
+        padding: 0.5rem;
+    }
+
+    .notification-page-component-container > h6{
+        padding: 0.3rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 375px){
+    /* .notification-page-header{
+        max-width: 30%;
+    } */
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn, .notification-page-archived-btn{
+        font-size: 0.92rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 3rem;
+    }
+
+    .notification-card-container{
+        padding: 0rem;
+    }
+
+    .notification-card{
+        padding: 0.5rem;
+    }
+
+    .notification-card-archive-btn{
+        width: 3.75rem;
+        padding: 0.25rem 0;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    .notification-page-name-btn-container{
+        padding: 0.5rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn, .notification-page-archived-btn{
+        font-size: 0.9rem;
+    }
+
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 2rem;
+    }
+
+    .notification-type-icon{
+        font-size: 1.1rem;
+    }  
+}
+
+@media screen and (max-width: 250px){
+    .notification-page-all-btn, .notification-page-order-btn, .notification-page-password-btn{
+        margin-right: 0.5rem;
+    }
+}
